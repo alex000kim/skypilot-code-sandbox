@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skypilot-code-sandbox"
+version = "0.1.0"
+description = "SkyPilot Code Sandbox MCP Server"
+dependencies = [
+    "fastapi>=0.116.1",
+    "llm-sandbox[docker]>=0.3.16",
+    "pydantic>=2.11.7",
+    "httpx>=0.28.1",
+    "fastmcp>=2.10.5",
+    "uvloop>=0.21.0",
+]
+
+[project.scripts]
+mcp-server = "src.mcp_server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"] 

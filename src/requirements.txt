@@ -1,0 +1,6 @@
+fastapi>=0.116.1
+llm-sandbox[docker]>=0.3.16
+pydantic>=2.11.7
+httpx>=0.28.1
+fastmcp>=2.10.5
+uvloop>=0.21.0
