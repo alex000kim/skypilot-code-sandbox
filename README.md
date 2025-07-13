@@ -55,7 +55,11 @@ Using Claude Desktop as an example:
 }
 ```
 
+https://github.com/user-attachments/assets/474e2c10-e0d4-47a7-9985-6bbdde6c526d
+
 **VS Code**: Add the same configuration to `.vscode/mcp.json` (rename `mcpServers` to `servers`).
+
+https://github.com/user-attachments/assets/ea4626e0-644a-4496-bb8a-161c668cad24
 
 ## Team Deployment Benefits
 
