@@ -1,0 +1,122 @@
+$ python benchmarking_scripts/benchmark.py --host http://52.70.59.131:30001 --token abc123 
+Checking API health...
+✓ API healthy
+
+Running API benchmark (3 iterations per test)
+
+Testing: Basic Math
+  ✓ 1: 0.268s
+  ✓ 2: 0.263s
+  ✓ 3: 0.349s
+  Average: 0.293s
+
+Testing: Loop
+  ✓ 1: 0.262s
+  ✓ 2: 0.286s
+  ✓ 3: 0.282s
+  Average: 0.277s
+
+Testing: String Operations
+  ✓ 1: 0.280s
+  ✓ 2: 0.274s
+  ✓ 3: 0.273s
+  Average: 0.275s
+
+Testing: List Comprehension
+  ✓ 1: 0.349s
+  ✓ 2: 0.277s
+  ✓ 3: 0.274s
+  Average: 0.300s
+
+Testing: Import Module
+  ✓ 1: 0.271s
+  ✓ 2: 0.279s
+  ✓ 3: 0.269s
+  Average: 0.273s
+
+========================================
+SUMMARY
+========================================
+Tests: 15, Success: 15 (100.0%)
+Average: 0.284s
+Range: 0.262s - 0.349s
+
+$ python benchmarking_scripts/e2b_benchmark.py 
+Running E2B benchmark (3 iterations per test)
+
+Testing: Basic Math
+  ✓ 1: 1.139s - 4
+  ✓ 2: 0.614s - 4
+  ✓ 3: 0.966s - 4
+  Average: 0.906s
+
+Testing: Loop
+  ✓ 1: 0.659s - 4950
+  ✓ 2: 0.719s - 4950
+  ✓ 3: 0.622s - 4950
+  Average: 0.667s
+
+Testing: String Operations
+  ✓ 1: 0.605s - HELLO WORLD
+  ✓ 2: 0.570s - HELLO WORLD
+  ✓ 3: 0.657s - HELLO WORLD
+  Average: 0.611s
+
+Testing: List Comprehension
+  ✓ 1: 0.681s - [0, 1, 4, 9, 16]
+  ✓ 2: 0.611s - [0, 1, 4, 9, 16]
+  ✓ 3: 0.595s - [0, 1, 4, 9, 16]
+  Average: 0.629s
+
+Testing: Import Module
+  ✓ 1: 0.823s - 3.141592653589793
+  ✓ 2: 1.307s - 3.141592653589793
+  ✓ 3: 0.637s - 3.141592653589793
+  Average: 0.922s
+
+========================================
+SUMMARY
+========================================
+Tests: 15, Success: 15 (100.0%)
+Average: 0.747s
+Range: 0.570s - 1.307s
+
+$ python benchmarking_scripts/modal_benchmark.py 
+Running Modal benchmark (3 iterations per test)
+
+Testing: Basic Math
+  ✓ 1: 2.358s - 4
+  ✓ 2: 2.036s - 4
+  ✓ 3: 5.154s - 4
+  Average: 3.183s
+
+Testing: Loop
+  ✓ 1: 1.610s - 4950
+  ✓ 2: 1.634s - 4950
+  ✓ 3: 1.816s - 4950
+  Average: 1.686s
+
+Testing: String Operations
+  ✓ 1: 2.101s - HELLO WORLD
+  ✓ 2: 1.893s - HELLO WORLD
+  ✓ 3: 1.729s - HELLO WORLD
+  Average: 1.908s
+
+Testing: List Comprehension
+  ✓ 1: 1.542s - [0, 1, 4, 9, 16]
+  ✓ 2: 1.604s - [0, 1, 4, 9, 16]
+  ✓ 3: 1.537s - [0, 1, 4, 9, 16]
+  Average: 1.561s
+
+Testing: Import Module
+  ✓ 1: 1.735s - 3.141592653589793
+  ✓ 2: 2.016s - 3.141592653589793
+  ✓ 3: 1.933s - 3.141592653589793
+  Average: 1.894s
+
+========================================
+SUMMARY
+========================================
+Tests: 15, Success: 15 (100.0%)
+Average: 2.046s
+Range: 1.537s - 5.154s
