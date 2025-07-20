@@ -21,7 +21,7 @@ A self-hosted, secure code execution sandbox for LLM agents deployed on your clo
 ### 1. Deploy the Service
 ```bash
 export AUTH_TOKEN=<YOUR_AUTH_TOKEN>
-sky serve up -n code-executor src/code-execution-service.yaml --env AUTH_TOKEN --secret AUTH_TOKEN
+sky serve up -n code-executor src/code-execution-service.sky.yaml --env AUTH_TOKEN --secret AUTH_TOKEN
 ```
 
 ### 2. Get the API Endpoint
